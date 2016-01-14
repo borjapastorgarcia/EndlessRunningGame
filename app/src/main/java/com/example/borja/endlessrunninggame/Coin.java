@@ -30,7 +30,6 @@ public class Coin {
         mCurrentFrame+=1%(mColumnWidth-1);
     }
     public boolean checkCollission(Rect playerR, Rect coinR){
-
         return Rect.intersects(playerR,coinR);
     }
     public Rect getBounds(){
@@ -50,6 +49,5 @@ public class Coin {
         this.x=x;
         this.width=bmp.getWidth()/mColumnWidth;
         this.height=bmp.getHeight()/mColumnHeight;
-
     }
 }
